@@ -1,0 +1,457 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500&family=Roboto:wght@100;300;400;500&display=swap');
+/* ***********************************MAIN PAGE COMMON****************************** */
+
+/* **********************************Micon Menu************************************ */
+
+.Micon{
+    /*  width: 100%;
+     height:100vh; */
+     position: fixed;
+     top: 0;
+     left: 0;
+     right: 0;
+     width: 100%;
+     height: 100%;
+     background: rgba(0,0,0,0.5);
+     transition: 1s;
+     opacity: 0;
+     z-index: 101;
+  } 
+  .Micon.active{
+      opacity: 1;
+      height: 100vh;
+     
+  }
+ .Micon nav{
+    position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     width: 30%;
+     height: 30rem;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     line-height: 3;
+     text-align: center;  
+     z-index: 1003;
+     font-family: "cabinsketch";
+ }
+ .Micon .onePage>a{
+    color: black;
+   /*  padding: .5rem 2rem; */
+    display: block;
+    width: 15rem;
+    letter-spacing: .25rem;
+    font-family: "cabinsketch";
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+    border: 2px solid black;
+    position: relative;
+    background: orange;
+    margin: 1rem;
+}   
+
+.Micon .Sec>li{
+    display: block;
+    background: #fff;
+    margin: 0 auto;
+    width: 13rem;
+   font-size: .8rem;
+   font-family: 'Cabin Sketch', cursive;
+}
+.Micon .Sec>li:hover{
+    background: #296dac;
+    color: #fff;
+    cursor: pointer;
+}
+.Micon .Sec>li>a{
+    color: black;
+}
+.Micon .Sec>li:hover a{
+    color: #fff;
+    font-weight: 600;
+}
+.onePage .sub{
+    margin: 0 auto;
+    width: 15rem;
+    background: rgb(241, 241, 241);
+    border: 1px solid black;
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+}
+.onePage .sub>li:hover{
+    background: #ff9f2d;
+    border: 1px solid black;
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+}
+.onePage .sub:hover{
+    border: none;
+}
+.onePage .sub>li:hover a{
+    font-weight: bold;
+    color: white;
+}
+
+ 
+ /* **********************************Micon Menu Span************************************ */
+ .mainM{
+     position: fixed;
+     left: 2rem;
+     top: 8%;
+     width: 2rem;
+     height: 2rem;
+     outline: none;
+     background: none;
+     border: none;
+     cursor: pointer;
+     z-index: 104;
+ }
+ 
+ .mainM span{
+     width: 2rem;
+     height: .25rem;
+     background: orange;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     border-radius: .3rem;
+     margin: .4rem 0;
+     transition: .5s;
+ }
+ .mainM:hover span{
+     background: #296dac;
+ }
+ 
+ /* .mainM:hover span:nth-child(1), */ .mainM.active span:nth-child(1){
+    position: absolute;
+    top: 25%;
+     transform: translate(-50%, -50%);
+     transform: rotate(-45deg);
+     width: 2rem;
+     height: .3rem;
+     background: #ff9f2d;
+     border-radius: .3rem;
+     box-shadow: 0 0 2px rgba(0,0,0,0.8); 
+ }
+ /* .mainM:hover span:nth-child(2), */ .mainM.active span:nth-child(2){
+     display: none;
+ }
+ /* .mainM:hover span:nth-child(3),  */.mainM.active span:nth-child(3){
+     position: absolute;
+     top: 25%;
+     transform: translate(-50%, -50%);
+     transform: rotate(45deg);
+     width: 2rem;
+     height: .3rem;
+     background: #ff9f2d;
+     border-radius: .3rem;
+     box-shadow: 0 0 2px rgba(0,0,0,0.3); 
+ }
+ 
+ 
+ .webDesign img{
+     width: 100%;
+     margin: 0;
+     padding: 0;
+     height: auto;
+   }
+ 
+   /* ******************************** Scroll Button ****************************************** */
+ #scrollToTopBtn {
+     display: none;
+     position: fixed;
+     bottom: 20px;
+     right: 20px;
+     width: 40px;
+     height: 40px;
+     color: #ff9f2d;
+     font-size: 30px;
+     border: none;
+     cursor: pointer;
+     border-radius: 5px;
+     text-align: center;
+     line-height: 40px;
+     z-index: 1000;
+ }
+ 
+.abtME img{
+    width: 70%;
+    display: flex;
+    margin: 0 auto;
+    padding: 0;
+    height: auto;
+  }
+  /* ***********************************ICA Ilsan Arts Academy ****************************** */
+ 
+  #wrap{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    margin: 0 auto;
+    position: relative;
+  }
+  .coursedetails{
+    width: 50%;
+
+  }
+  .coursedetails .imBox{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .imBox img{
+    width: 60%;
+  }
+  .coursedetails .textBox{
+    width: 100%;
+    padding-bottom: 5%;
+    font-size: 20px;
+  }
+  .intheM{
+    width: 50%;
+    margin: auto;
+  }
+  .coursedetails .textBox h2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 23px;
+    font-weight: 500;
+    color: rgb(79,79,79);
+    padding-bottom: 2.5%;
+  }
+  .coursedetails h3{
+    font-family: 'Roboto', sans-serif;
+    color: rgb(79,79,79);
+    font-size: 25px;
+    text-align: center;
+    padding-bottom: 10%;
+    font-weight: 500;
+  }
+  .coursedetails .textBox span{
+    line-height: 2;
+    font-size: 18px;
+    font-weight: 100;
+  }
+  .textBox span a{
+    color: #296dac;
+  }
+ .cerT{
+    display: flex;
+    margin-top: 10%;
+    cursor: pointer;
+ }
+ .cerT a{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    cursor: pointer;
+ }
+ .cerT img{
+    padding-right: 9%;
+    z-index: 1000000000;
+ }
+
+ .CourseC{
+    margin-top: 10%;
+    display: flex;
+    z-index: 1000000;
+    cursor: pointer;
+ }
+ .CourseC a{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    cursor: pointer;
+ }
+ .CourseC img{
+    cursor: pointer;
+    padding-right: 9%;
+    z-index: 1000000000;
+ }
+ .CourseC span{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    margin-left: 10%;
+    font-size: 24px;
+ }
+ .myExperience{
+    width: 50%;
+ }
+ .myExperience h1{
+    margin-top: 30%;
+    font-weight: 500;
+    font-size: 30px;
+    color: rgb(79,79,79);
+    text-align: center;
+ }
+ .myExperience p{
+    font-family: 'Roboto', sans-serif;
+    width: 80%;
+    margin: auto;
+    margin-top: 20%;
+    font-size: 18px;
+    line-height: 1.7;
+    font-weight: 300;
+ }
+ .eMail{
+    cursor: pointer;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 18px;
+ }
+ .eMail img{
+    width: 6%;
+    padding-bottom: 3%;
+    cursor: pointer;
+ }
+ .eMail p{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+    margin-bottom: 1.5%;
+    color: rgb(79,79,79);
+ }
+ .eMail p a{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
+ }
+
+ .courseCompletion{
+    position: absolute;
+ }
+ .courseCompletion{
+    position: absolute;
+    width: 40%;
+    height: 40%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: white;
+    border-radius: 7%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: none;
+ }
+ .courseCompletion img{
+    width: 6%;
+    position: absolute;
+    right: 3%;
+    top: 3%;
+    cursor: pointer;
+ }
+ .courseCompletion h4{
+    text-align: center;
+    margin-top: 20%;
+    margin-bottom: 5%;
+    font-size: 30px;
+    font-weight: 500;
+    color: rgb(79,79,79);
+ }
+ .courseCompletion p{
+    width: 80%;
+    margin-top: 10%;
+    margin: auto;
+    font-size: 20px;
+    line-height: 1.5;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+ }
+
+ @media screen and (max-width: 1024px) {
+   
+   .coursedetails, .myExperience {
+       width: 100%; /* Full width for better readability */
+   }
+   .coursedetails h3{
+      font-size: 18px;
+   }
+   .myExperience h1{
+      font-size: 18px;
+   }
+   .coursedetails .textBox, .myExperience p {
+       font-size: 12px; /* Smaller font size for readability */
+   }
+   .coursedetails .textBox span, .textBox a{
+      font-size: 12px;
+   }
+   .CourseC a, .cerT a{
+      font-size: 13px;
+   }
+   .coursedetails .textBox h2, .myExperience h1 {
+       font-size: 16px; /* Adjust heading sizes */
+   }
+   .cerT img, .CourseC img, .eMail img {
+       width: 10%; /* Adjust image sizes */
+   }
+
+   .eMail img{
+      width: 7%;
+   }
+   .eMail p{
+      font-size: 13px;
+   }
+   #menu>a{
+      display: none;
+   }
+ }
+   @media screen and (max-width: 768px) {
+      .abtME img{
+         width: 100%;
+         display: flex;
+         margin: 0 auto;
+
+       }
+       #wrap{
+         width: 100%;
+         height: 100%;
+         display: flex;
+         margin: 0 auto;
+         position: relative;
+       }
+      .coursedetails h3{
+         font-size: 14px;
+      }
+      .coursedetails, .myExperience {
+         width: 100%; /* Full width for better readability */
+     }
+  
+     .coursedetails .textBox, .myExperience p {
+         font-size: 12px; /* Smaller font size for readability */
+     }
+     .coursedetails .textBox span, .textBox a{
+        font-size: 12px;
+     }
+     .CourseC a, .cerT a{
+        font-size: 12px;
+       
+     }
+     .coursedetails .textBox h2, .myExperience h1 {
+         font-size: 14px; /* Adjust heading sizes */
+     }
+     .cerT img, .CourseC img, .eMail img {
+         width: 10%; /* Adjust image sizes */
+     }
+     .eMail img{
+        width: 10%;
+     }
+     .eMail p{
+        font-size: 10px;
+     }
+     #menu>a{
+        display: none;
+     }
+  
+}
+
+ 

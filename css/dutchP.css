@@ -1,0 +1,383 @@
+@charset "utf-8";
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+/* ***********************************MAIN PAGE COMMON****************************** */
+
+/* **********************************Micon Menu************************************ */
+
+.Micon{
+    /*  width: 100%;
+     height:100vh; */
+     position: fixed;
+     top: 0;
+     left: 0;
+     right: 0;
+     width: 100%;
+     height: 100%;
+     background: rgba(0,0,0,0.5);
+     transition: 1s;
+     opacity: 0;
+     z-index: 10;
+  } 
+  .Micon.active{
+      opacity: 1;
+      height: 100vh;
+     
+  }
+  .Micon nav{
+     position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 30%;
+      height: 30rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      line-height: 3;
+      text-align: center;  
+      z-index: 1000000;
+      font-family: "cabinsketch";
+  }
+  .Micon .onePage>a{
+     color: black;
+    /*  padding: .5rem 2rem; */
+     display: block;
+     width: 15rem;
+     letter-spacing: .25rem;
+     font-family: "cabinsketch";
+     border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+     border: 2px solid black;
+     position: relative;
+     background: orange;
+     margin: 1rem;
+ }   
+ 
+ .Micon .Sec>li{
+     z-index: -3;
+     display: block;
+     background: #fff;
+     margin: 0 auto;
+     width: 13rem;
+    font-size: .8rem;
+    font-family: 'Cabin Sketch', cursive;
+ }
+ .Micon .Sec>li:hover{
+     background: #296dac;
+     color: #fff;
+     cursor: pointer;
+ }
+ .Micon .Sec>li>a{
+     color: black;
+ }
+ .Micon .Sec>li:hover a{
+     color: #fff;
+     font-weight: 600;
+ }
+ .onePage .sub{
+     margin: 0 auto;
+     width: 15rem;
+     background: rgb(241, 241, 241);
+     border: 1px solid black;
+     border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+ }
+ .onePage .sub>li:hover{
+     background: #ff9f2d;
+     border: 1px solid black;
+     border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+ }
+ .onePage .sub:hover{
+     border: none;
+ }
+ .onePage .sub>li:hover a{
+     font-weight: bold;
+     color: white;
+ }
+ 
+ 
+ /* **********************************Micon Menu Span************************************ */
+ .mainM{
+     position: fixed;
+     left: 2rem;
+     top: 8%;
+     width: 2rem;
+     height: 2rem;
+     outline: none;
+     background: none;
+     border: none;
+     cursor: pointer;
+     z-index: 11;
+ }
+ 
+ .mainM span{
+     width: 2rem;
+     height: .25rem;
+     background: rgb(80, 135, 151);
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     border-radius: .3rem;
+     margin: .4rem 0;
+     transition: .5s;
+ }
+ .mainM:hover span{
+     background: #ff9f2d;
+ }
+ 
+ /* .mainM:hover span:nth-child(1), */ .mainM.active span:nth-child(1){
+    position: absolute;
+    top: 25%;
+     transform: translate(-50%, -50%);
+     transform: rotate(-45deg);
+     width: 2rem;
+     height: .3rem;
+     background: rgb(80, 135, 151);
+     border-radius: .3rem;
+     box-shadow: 0 0 2px rgba(0,0,0,0.8); 
+ }
+ /* .mainM:hover span:nth-child(2), */ .mainM.active span:nth-child(2){
+     display: none;
+ }
+ /* .mainM:hover span:nth-child(3),  */.mainM.active span:nth-child(3){
+     position: absolute;
+     top: 25%;
+     transform: translate(-50%, -50%);
+     transform: rotate(45deg);
+     width: 2rem;
+     height: .3rem;
+     background: rgb(80, 135, 151);
+     border-radius: .3rem;
+     box-shadow: 0 0 2px rgba(0,0,0,0.3); 
+ }
+ 
+ 
+ .webDesign img{
+     width: 100%;
+     margin: 0;
+     padding: 0;
+     height: auto;
+   }
+ 
+   /* ******************************** Scroll Button ****************************************** */
+ #scrollToTopBtn {
+     display: none;
+     position: fixed;
+     bottom: 20px;
+     right: 20px;
+     width: 40px;
+     height: 40px;
+     color: rgb(80, 135, 151);
+     font-size: 30px;
+     border: none;
+     cursor: pointer;
+     border-radius: 5px;
+     text-align: center;
+     line-height: 40px;
+     z-index: 1000;
+ }
+ 
+.dutchPay img{
+    width: 70%;
+    display: flex;
+    margin: 0 auto;
+    padding: 0;
+    height: auto;
+  }
+    /* ******************************** Prototype ****************************************** */
+    h1{
+        font-size: 3em;
+        font-weight: 500;
+        font-family: 'Roboto', sans-serif;
+        letter-spacing: .03em;
+        color: rgb(51, 51, 51);
+        text-align: center;
+       /*  margin: 7% 0; */
+    }
+    .siZer{
+        width: 60%;
+    }
+    .proWrap{
+        width: 100%;
+        display: flex;
+    }
+    .proto{
+        font-family: 'Roboto', sans-serif;
+        letter-spacing: .05em;
+        width: 100%;
+        height: 1200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+    }
+    .proto iframe{
+        z-index: 100000000000;
+        width: 100%;
+        height: 900px; 
+        position: relative;  
+        border: none;
+    }
+    .left{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .right{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+   
+    .proto h2{
+        text-align: center;
+        font-size: 30px;
+        font-weight: 300;
+        margin-bottom: 5%;
+        color: rgb(74, 125, 140);
+    }
+    .right{
+        width: 50%;
+    }
+
+        /* ******************************** Reflection ****************************************** */
+        .reFlection{
+            width: 100%;
+            height: 600px;
+        }
+        .reFlection p{
+            font-family: 'Roboto', sans-serif;
+            width: 70%;
+            margin: 0 auto;
+            padding-top: 2%;
+            font-size: 20px;
+            font-weight: 200;
+            line-height: 1.5;
+        }
+
+        /* ******************************** Aspiration ****************************************** */
+        .asPiration{
+            width: 100%;
+            height: 500px;
+        }
+        .asPiration p{
+            font-family: 'Roboto', sans-serif;
+            width: 70%;
+            margin: 0 auto;
+            padding-top: 2%;
+            font-size: 28px;
+            font-weight: 200;
+            line-height: 1.5;
+        }
+        @media screen and (max-width: 1024px){
+            h1{
+                font-size: 1.6em;
+                font-weight: 500;
+            }
+            .siZer{
+                width: 60%;
+            }  
+            .proto h2{
+                font-size: 20px;
+            }
+            .proto iframe{
+                z-index: 100000000000;
+                width: 100%;
+                height: 700px; 
+                position: relative;  
+                border: none;
+            }
+            .left{
+                width: 50%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .right{
+                width: 50%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+        /* ******************************** Reflection ****************************************** */
+        .reFlection{
+            width: 100%;
+            height: 400px;
+        }
+        .reFlection p{
+            font-family: 'Roboto', sans-serif;
+            width: 80%;
+            margin: 0 auto;
+            padding-top: 2%;
+            font-size: 14px;
+            font-weight: 200;
+            line-height: 1.5;
+        }
+        /* ******************************** Aspiration ****************************************** */
+
+        .asPiration{
+            width: 100%;
+            height: 450px;
+        }
+        .asPiration p{
+            font-family: 'Roboto', sans-serif;
+            width: 80%;
+            margin: 0 auto;
+            padding-top: 2%;
+            font-size: 20px;
+            font-weight: 200;
+            line-height: 1.5;
+        }
+        }
+        @media screen and (max-width: 768px){
+            .proto{
+                height: 800px;
+            }
+            h1{
+                font-size: 2em;
+            }
+            .proto h2{
+                font-size: 25px;
+            }
+            .proto iframe{
+                z-index: 100000000000;
+                width: 100%;
+                height: 500px; 
+                border: 1px solid red;
+                position: relative;  
+                border: none;
+            }
+             /* ******************************** Reflection ****************************************** */
+        .reFlection{
+            width: 100%;
+            height: 350px;
+        }
+        .reFlection p{
+            font-size: 13px;
+        }
+         /* ******************************** Aspiration ****************************************** */
+         .asPiration{
+            width: 100%;
+            height: 400px;
+        }
+        .asPiration p{
+            font-family: 'Roboto', sans-serif;
+            width: 80%;
+            margin: 0 auto;
+            padding-top: 2%;
+            font-size: 13px;
+            font-weight: 200;
+            line-height: 1.5;
+        }
+        }

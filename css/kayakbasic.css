@@ -1,0 +1,38 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap');
+/* font-family: 'Noto Sans KR', sans-serif; */
+@font-face{
+    font-family: "BinggraeSamanco";
+    src: url(../font/BinggraeSamanco.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    line-height: 1;
+    /* font-family: 'Noto Sans KR', sans-serif; */
+    font-family: "BinggraeSamanco";
+ /*    font-weight: 300; */
+    color: #232323;
+}
+h1, h2, h3, h4, h5, h6{
+    font-size: 100%;
+    font-weight: normal;
+}
+ol, ul{
+    list-style:none;
+}
+a{
+    text-decoration: none;
+    color: #232323;
+}
+img{
+    vertical-align: top;
+}
+.clear::before, .clear::after{
+    content: "";
+    display: block;
+    clear: both; 
+}

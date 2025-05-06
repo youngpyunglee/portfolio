@@ -1,0 +1,93 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500&family=Roboto:wght@100;300;400;500&display=swap');
+#menu {
+    position: fixed;
+    top: 7%;
+    right: 0;
+    width: 18%;
+    height: 5%;
+    transform-origin: right top;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle, rgba(255, 255, 255, 2) 60%, rgba(255, 255, 255, 0) 100%);
+    z-index: 1000;
+}
+.hide-menu {
+    display: none;
+}
+#menu a{
+    text-decoration: none;
+    cursor: pointer;
+    font-family: 'Noto Sans KR', sans-serif;
+    letter-spacing: .05em;
+    font-size: 15px;
+}
+.hide-menu{
+    display: none;
+}
+.menu-item {
+/*     border: 1px solid red; */
+    padding: 0 2.5%;
+    cursor: pointer;
+    display: block;
+    margin: 10px 0;
+    opacity: 0.3;
+    transition: opacity 0.3s, color 0.3s, font-weight 0.3s; 
+    color: #333; 
+    font-weight: normal; 
+}
+
+.menu-item.active {
+    transform: scale(1.1);
+    transition: .3s;
+    font-size: large;
+    opacity: 1;
+    color: black;
+    font-weight: bold;
+}
+.secWrap{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+}
+.section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.section:first-child{
+    height: 150%;
+    
+}
+.section:nth-child(2){
+    height: 150%;
+}
+.section:nth-child(3){
+    height: 170%;
+}
+.section:nth-child(4){
+    height: 100%;
+    
+}
+.section:nth-child(5){
+    height: 120%;
+}
+
+@media screen and (max-width: 1024px){
+
+   .section{
+    display: none;
+   } 
+   .eMail{
+    margin: 20% 0;
+ }
+
+}
+@media screen and (max-width: 768px){
+    .section{
+        display: none;
+    }
+    
+}

@@ -1,0 +1,463 @@
+@charset "utf-8";
+
+@font-face{
+    font-family: abc;
+    src: url(font/abc.ttf);
+}
+@font-face{
+    font-family:Hlight;
+    src: url(font/Hlight.ttf);
+}
+@font-face{
+    @font-face {font-family: "ABChanel Corpo Light"; 
+        src: url("//db.onlinewebfonts.com/t/08d38d30f8748388c11592e40dd0ad68.eot");
+         src: url("//db.onlinewebfonts.com/t/08d38d30f8748388c11592e40dd0ad68.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/08d38d30f8748388c11592e40dd0ad68.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/08d38d30f8748388c11592e40dd0ad68.woff") format("woff"), url("//db.onlinewebfonts.com/t/08d38d30f8748388c11592e40dd0ad68.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/08d38d30f8748388c11592e40dd0ad68.svg#ABChanel Corpo Light") format("svg"); }
+}
+body{
+    color: black;
+}
+h1{
+    font-size: 40px;
+    font-family: "ABChanel Corpo Light";
+}
+h2{
+    font-size: 30px;
+    font-family: "ABChanel Corpo Light";
+}
+h3{
+    font-size: 20px;
+    font-family: "ABChanel Corpo Light";
+}
+h4{
+    font-size: 15px;
+    font-family: "ABChanel Corpo Light"; 
+}
+p{
+    font-family:Hlight;
+}
+a{
+    color: black;
+}
+/* -----------------------------------------------Header------------------------------------------------------ */
+.topblackbar{
+    background: black;
+    height: 20px;
+  
+}
+.header_main{
+    position: relative;
+}
+.header_ch{
+    text-align: center;
+    width: 100%;
+    height: 85px;
+    line-height: 85px;
+    font-weight: 600;
+}
+.searchbar ul li{
+    float: right;
+    font-size: 20px;
+    margin-right: 160px;
+    position: absolute;
+    right: 0;
+  top: 35%;
+  font-family: "ABChanel Corpo Light"; 
+ 
+}
+.searchbar ul li a{
+    color: #636363;
+
+}
+.searchbar ul li:nth-child(1){
+    right: 120px;
+}
+.searchbar ul li:nth-child(2){
+    right: 80px;
+}
+.searchbar ul li:nth-child(3){
+    right: 40px;
+}
+header nav{
+    width: 100%;
+    height: 50px;
+    margin: 0 auto;
+    line-height: 50px;
+    font-family: "ABChanel Corpo Light"; 
+    font-size: 15px;
+    }
+header nav ul li{
+    float: left;
+    text-align: center;
+    width: 8%;
+    white-space: nowrap;
+    transform: translate(120%, 0);
+}
+/* --------------------------------------------------Body--------------------------------------------- */
+#holidaycollection{
+    background: url(../images/mainbanner.jpg) no-repeat center/cover;
+    width: 100%;
+    height: 750px;
+    position: relative;
+  
+}
+#holidaycollection h2{
+    color: white;
+    text-align:center;
+    padding-top: 100px;
+}
+.rougeallure{
+    background: no-repeat center;
+    position: absolute;
+    top: 200px;
+    left: 340px;
+}
+.rougeallure_box{
+    background: white;
+    width: 400px;
+    height: 75px;
+    position: absolute;
+    left: 340px;
+    top: 525px;
+}
+.rougeallure_box:hover{
+    background: url(../images/rachanel.jpg) no-repeat center;
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    top: 200px;
+    left: 340px;
+    transition: all 0.3s;
+}
+.ombrepremier{
+    background: no-repeat center;
+    position: absolute;
+    top: 200px;
+    left: 1180px;
+}
+.ombrepremier_box{
+    background: white;
+    width: 400px;
+    height: 75px;
+    position: absolute;
+    left: 1180px;
+    top: 525px;
+}
+.ombrepremier_box:hover{
+    background: url(../images/opchanel.jpg) no-repeat center;
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    top: 200px;
+    left: 1180px;
+    transition: all 0.3s;
+}
+.leschain{
+    background: no-repeat center;
+    position: absolute;
+    top: 200px;
+    left: 760px;
+}
+.leschain_box{
+    background: white;
+    width: 400px;
+    height: 75px;
+    position: absolute;
+    left: 760px;
+    top: 525px;
+}
+.leschain_box:hover{
+    background: url(../images/lcchanel.jpg) no-repeat center;
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    top: 200px;
+    left: 760px;
+    transition: all 0.3s;
+}
+
+/* main #holidaycollection .button a{
+    background: url(../images/butoon.svg) no-repeat;
+    position: absolute;
+    width: 50px;
+    height: 100px;
+}  */
+
+ .prev{
+    right: 250px;
+    top: 350px;
+    background: url(../images/butoon.svg) no-repeat;
+    position: absolute;
+    width: 50px;
+    height: 100px;
+    background-position: -50px 0;  
+}
+.button .prev:hover{
+    background-position: -50px -100px;
+}
+.button .next:hover{
+    background-position: 0 -100px;
+}
+main a{
+    color: white;
+}
+.next{
+    left: 270px;
+    right: 290px;
+    top: 350px;
+    background: url(../images/butoon.svg) no-repeat;
+    position: absolute;
+    width: 50px;
+    height: 100px;
+}
+.rougeallure_box h3{
+    text-align: center;
+    line-height: 75px;
+}
+.ombrepremier_box h3{
+    text-align: center;
+    line-height: 75px;
+}
+.leschain_box h3{
+    text-align: center;
+    line-height: 75px;
+}
+.seemorebox{
+    border: 2px solid white;
+    padding: 15px 30px;
+    width: 160px;
+    height: 16px;
+    text-align: center;
+    line-height: 16px;
+    position: absolute;
+    bottom: 60px;
+    left: 850px;
+}
+.seemorebox:hover{
+    background: white;
+}
+.seemorebox a:hover{
+    color: black;
+    font-weight: bold;
+}
+/* ------------------------------------chanelchoice---------------------------------- */
+#chanelchoice h2{
+    margin-top: 100px;
+    text-align: center;
+}
+#chanelchoice{
+    position: relative;
+}
+.lesbeige1{
+    margin-top: 65px;
+    margin-left: 340px;
+    width: 540px;
+    height: 400px;
+    position:relative
+}
+#chanelchoice a{
+    color: black;
+}
+.lesbeige1 a{
+    border: 2px solid black;
+    background: white;
+    width: 165px;
+    height: 30px;
+    padding: 5px 10px;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+    position: absolute;
+    right: 100%;
+    top: 100%;
+    left: 30px;
+    transform: translateY(-50%);
+}
+.lesbeige_d h3{
+    margin-top: 50px;
+    margin-left: 360px;
+}
+.lesbeige_d p{
+    margin-top: 30px;
+    margin-left: 360px;
+}
+.lesbeige_d h4{
+    margin-top: 20px;
+    margin-left: 360px;
+}
+.lesbeige2{
+   margin-left: 1040px;
+   width: 540px;
+   height: 400px;
+   position: absolute;
+   top: 190px;
+}
+.lesbeige2 a{
+    border: 2px solid black;
+    background: white;
+    width: 165px;
+    height: 30px;
+    padding: 5px 10px;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+    position: absolute;
+    right: 100%;
+    top: 100%;
+    left: 30px;
+    transform: translateY(-50%);
+}
+.lesbeige_d1 p{
+    margin-top: 30px;
+    
+}
+.lesbeige_d1 h4{
+    margin-top: 20px;
+
+}
+.lesbeige_d1{
+    position: absolute;
+    left: 1051px;
+}
+.ruge_allure{
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    top: 740px;
+    left: 480px;
+}
+.ruge_allure a{
+    border: 2px solid black;
+    background: white;
+    width: 165px;
+    height: 30px;
+    padding: 5px 10px;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+    position: absolute;
+    right: 100%;
+    top: 100%;
+    left: 30px;
+    transform: translateY(-50%);
+}
+.rougeallure_d1{
+    position: absolute;
+    top: 1200px;
+    left: 495px;
+}
+.rougeallure_d1 p{
+    margin-top: 30px; 
+}
+.rougeallure_d1 h4{
+    margin-top: 20px;
+}
+.eyeshadows{
+    position: absolute;
+    left: 1040px;
+    top: 840px;
+}
+.eyeshadows a{
+    border: 2px solid black;
+    background: white;
+    width: 165px;
+    height: 30px;
+    padding: 5px 10px;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+    position: absolute;
+    right: 100%;
+    top: 100%;
+    left: 30px;
+    transform: translateY(-50%);
+}
+
+.ombre_shadows{
+    position: absolute;
+    left: 1051px;
+    top: 1305px;
+}
+.ombre_shadows p{
+    margin-top: 30px; 
+}
+.ombre_shadows h4{
+    margin-top: 20px;
+}
+footer{
+    margin-top: 900px;
+    width: 100%;
+    height: 475px;
+    background: black;
+    color: white;
+    
+  
+}
+footer a{
+    color: white;
+}
+footer h1{
+    text-align: center;
+    padding: 40px;
+}
+/* footer nav li{
+    display: inline-block;
+} */
+footer nav{
+    width: 1450px;
+    margin: 0 auto;
+    position: relative;
+
+}
+footer nav>ul{
+    font-family: "ABChanel Corpo Light"; 
+    display: flex;
+    justify-content: space-around;
+
+}
+footer nav ul>li{
+  /*  display: inline-block;
+    width: 25%; */
+    height: 40px;
+    line-height: 40px;
+    white-space: nowrap;
+    font-size: 15px;
+    position: relative;
+/*     text-align: center; */
+    
+    }
+    footer nav ul>li ul{
+        position: absolute;
+        top: 40px;
+        font-family:Hlight;
+        left: 0;  
+    
+    }
+  
+footer div{
+    border-top: 1px solid white;
+    width: 1285px;
+    margin-top: 250px;
+    margin-left: 308px
+    }
+footer div .socialmediaicon li{
+    float: right;
+   margin-top: 20px;
+   margin-right: 20px;
+}
+footer p{
+    margin-top: 20px;
+    margin-left: 308px;
+    font-size: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+

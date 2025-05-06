@@ -1,0 +1,228 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+/* font-family: 'Cabin Sketch', cursive;
+font-family: 'Patrick Hand', cursive;
+*/
+@font-face{
+    font-family: "cabinsketch";
+    src: url(../font/CabinSketch-Regular.ttf);
+}
+@font-face{
+    font-family: "SolidSlash";
+    src: url(../font/Typo_DecoSolidSlash.ttf);
+}
+@font-face{
+    font-family: "tradizional ";
+    src: url(../font/tradizional\ DEMO.otf);
+}
+
+/* ***********************************MAIN PAGE COMMON****************************** */
+html{
+    font-size: 20px;
+    height: 100%;
+}
+body{
+    font-size: 1rem;
+    height: 100%;
+}
+#wrap{
+    max-width: 96rem;
+    max-height: 52rem;
+    margin: 0 auto;
+    height: 100%;
+    position: relative;
+}
+/* ***********************************MAIN PAGE****************************** */
+.main{
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    background: #ff9f2d;
+}
+.mTitle{
+    position: absolute;
+    z-index: 1000;
+    left: 29%;
+    text-align: right;
+    top: 15%;
+} 
+.mTitle h1{
+    font-family: "cabinsketch";
+    font-size: 2.5rem;
+    color: #fff;
+    position: absolute;
+    top: -12%;
+    right: 0;
+    animation: f1 .5s .6s linear forwards;
+    opacity: 0;
+}
+@keyframes f1{
+    100%{opacity: 1;}
+}
+.mTitle h2{
+    font-family: "tradizional ";
+    color: #fff;
+    font-size: 9.5rem;
+    letter-spacing: .25rem;
+    animation: f2 .5s .8s linear forwards;
+    opacity: 0;
+}
+@keyframes f2{
+    100%{opacity: 1;}
+}
+.mPolaroids{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.mPolaroids img{
+    position: absolute;
+}
+.pl01{
+    right: 13%;
+    bottom: -50%;
+    animation: p1 .5s .5s linear forwards;
+    opacity: 0;
+}
+@keyframes p1{
+    100%{opacity: 1; bottom: -5%;}
+}
+.pl02{
+    left: -20%;
+    top: -20%;
+    animation: p2 .5s  linear forwards;
+    opacity: 0;
+}
+@keyframes p2{
+    100%{opacity: 1; left: 0; top: 0;}
+}
+.pl03{
+    left: -50%;
+    bottom: -50%;
+    transform: rotate(0deg);
+    animation: p3 .5s .2s linear forwards;
+    opacity: 0;
+}
+@keyframes p3{
+    100%{opacity: 1; left: 0; bottom: -15%;}
+}
+.pl04{
+    right: -50%;
+    top: -50%;
+    animation: p4 .5s .3s linear forwards;
+    opacity: 0;
+}
+@keyframes p4{
+    100%{opacity: 1; right: 0; top: 0;}
+}
+
+/* ***********************************MAIN PAGE MENU****************************** */
+
+.main nav ul{
+    z-index: 1000;
+    position: absolute;
+    top: 45%;
+    left: 28.5%;
+}
+
+.main nav ul li{
+   /*  font-size: 2rem;
+    text-align: center;
+    font-family: "cabinsketch";
+    margin: 1rem;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+    box-shadow: 0 2px 0 #000;
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+    padding-bottom: 3px;
+    transition: .5s;
+    background-image: url('data:image/gif;base64,R0lGODlhBAAEAIABAAAAAAAAACH/C1hNUCBEYXRhWE1QPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS4wLWMwNjEgNjQuMTQwOTQ5LCAyMDEwLzEyLzA3LTEwOjU3OjAxICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1LjEgV2luZG93cyIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo5NUY1OENCRDdDMDYxMUUyOTEzMEE1MEM5QzM0NDVBMyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo5NUY1OENCRTdDMDYxMUUyOTEzMEE1MEM5QzM0NDVBMyI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjk1RjU4Q0JCN0MwNjExRTI5MTMwQTUwQzlDMzQ0NUEzIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjk1RjU4Q0JDN0MwNjExRTI5MTMwQTUwQzlDMzQ0NUEzIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+Af/+/fz7+vn49/b19PPy8fDv7u3s6+rp6Ofm5eTj4uHg397d3Nva2djX1tXU09LR0M/OzczLysnIx8bFxMPCwcC/vr28u7q5uLe2tbSzsrGwr66trKuqqainpqWko6KhoJ+enZybmpmYl5aVlJOSkZCPjo2Mi4qJiIeGhYSDgoGAf359fHt6eXh3dnV0c3JxcG9ubWxramloZ2ZlZGNiYWBfXl1cW1pZWFdWVVRTUlFQT05NTEtKSUhHRkVEQ0JBQD8+PTw7Ojk4NzY1NDMyMTAvLi0sKyopKCcmJSQjIiEgHx4dHBsaGRgXFhUUExIREA8ODQwLCgkIBwYFBAMCAQAAIfkEAQAAAQAsAAAAAAQABAAAAgYEEpdoeQUAOw=='); */
+    
+}
+.main nav ul li:hover{
+    transform: translateY(-8%);
+}
+.main nav ul li{
+    transition: .5s;
+}
+
+.main nav ul li a{
+    /* display: block;
+    padding: 5px 15px;
+    background: #ff9f2d;
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+    border: 2px solid #000;
+    font-family: "cabinsketch"; */
+    color: black;
+    padding: .5rem 2rem; 
+     display: block;
+     font-family: "cabinsketch";
+     border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+     border: 2px solid black;
+     position: relative;
+     background: #ff9f2d;
+     margin: 1rem;
+     font-size: 2rem;
+     text-align: center;
+     letter-spacing: .2rem;
+     transition: .5s;
+}
+.main nav ul li a::after{
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+   bottom: -15%;
+   right: 0;
+   left: 0;
+   border: 1px solid black;
+   border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+   background: repeating-linear-gradient(
+       -45deg,
+       #ff9f2d,
+       #ff9f2d 3px,
+       black 3px,
+       black 5px
+   );
+}
+.main nav ul li:first-child{
+    animation: m01 1s 1s linear forwards;
+    opacity: 0;
+}
+@keyframes m01{
+    100%{opacity: 1;}
+}
+.main nav ul li:nth-child(2){
+    animation: m02 1s 1.4s linear forwards;
+    opacity: 0;
+}
+@keyframes m02{
+    100%{opacity: 1;}
+}
+.main nav ul li:nth-child(3){
+    animation: m03 1s 1.6s linear forwards;
+    opacity: 0;
+}
+@keyframes m03{
+    100%{opacity: 1;}
+}
+.main nav ul li:nth-child(4){
+    animation: m04 1s 1.8s linear forwards;
+    opacity: 0;
+}
+@keyframes m04{
+    100%{opacity: 1;}
+}
+.main nav ul li:nth-child(5){
+    animation: m05 1s 2s linear forwards;
+    opacity: 0;
+}
+@keyframes m05{
+    100%{opacity: 1;}
+}
+
+
+
+

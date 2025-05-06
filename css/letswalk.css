@@ -1,0 +1,327 @@
+@charset "utf-8";
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+/* ***********************************MAIN PAGE COMMON****************************** */
+
+
+
+/* **********************************Micon Menu************************************ */
+
+.Micon{
+    /*  width: 100%;
+     height:100vh; */
+     position: fixed;
+     top: 0;
+     left: 0;
+     right: 0;
+     width: 100%;
+     height: 100%;
+     background: rgba(0,0,0,0.5);
+     transition: 1s;
+     opacity: 0;
+     z-index: 10000;
+  } 
+  .Micon.active{
+      opacity: 1;
+      height: 100vh;
+     
+  }
+  .Micon nav{
+     position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 30%;
+      height: 30rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      line-height: 3;
+      text-align: center;  
+      z-index: 1000000;
+      font-family: "cabinsketch";
+  }
+  .Micon .onePage>a{
+     color: black;
+    /*  padding: .5rem 2rem; */
+     display: block;
+     width: 15rem;
+     letter-spacing: .25rem;
+     font-family: "cabinsketch";
+     border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+     border: 2px solid black;
+     position: relative;
+     background: orange;
+     margin: 1rem;
+ }   
+ 
+ .Micon .Sec>li{
+     z-index: -3;
+     display: block;
+     background: #fff;
+     margin: 0 auto;
+     width: 13rem;
+    font-size: .8rem;
+    font-family: 'Cabin Sketch', cursive;
+ }
+ .Micon .Sec>li:hover{
+     background: #296dac;
+     color: #fff;
+     cursor: pointer;
+ }
+ .Micon .Sec>li>a{
+     color: black;
+ }
+ .Micon .Sec>li:hover a{
+     color: #fff;
+     font-weight: 600;
+ }
+ .onePage .sub{
+     margin: 0 auto;
+     width: 15rem;
+     background: rgb(241, 241, 241);
+     border: 1px solid black;
+     border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+ }
+ .onePage .sub>li:hover{
+     background: #ff9f2d;
+     border: 1px solid black;
+     border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+ }
+ .onePage .sub:hover{
+     border: none;
+ }
+ .onePage .sub>li:hover a{
+     font-weight: bold;
+     color: white;
+ }
+ 
+ 
+ /* **********************************Micon Menu Span************************************ */
+ .mainM{
+     position: fixed;
+     left: 2rem;
+     top: 8%;
+     width: 2rem;
+     height: 2rem;
+     outline: none;
+     background: none;
+     border: none;
+     cursor: pointer;
+     z-index: 11111;
+ }
+ 
+ .mainM span{
+     width: 2rem;
+     height: .25rem;
+     background: rgb(37, 149, 59);
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     border-radius: .3rem;
+     margin: .4rem 0;
+     transition: .5s;
+ }
+ .mainM:hover span{
+     background: #ff9f2d;
+ }
+ 
+ /* .mainM:hover span:nth-child(1), */ .mainM.active span:nth-child(1){
+    position: absolute;
+    top: 25%;
+     transform: translate(-50%, -50%);
+     transform: rotate(-45deg);
+     width: 2rem;
+     height: .3rem;
+     background: rgb(37, 149, 59);
+     border-radius: .3rem;
+     box-shadow: 0 0 2px rgba(0,0,0,0.8); 
+ }
+ /* .mainM:hover span:nth-child(2), */ .mainM.active span:nth-child(2){
+     display: none;
+ }
+ /* .mainM:hover span:nth-child(3),  */.mainM.active span:nth-child(3){
+     position: absolute;
+     top: 25%;
+     transform: translate(-50%, -50%);
+     transform: rotate(45deg);
+     width: 2rem;
+     height: .3rem; 
+     background: rgb(37, 149, 59);               
+     border-radius: .3rem;       
+     box-shadow: 0 0 2px rgba(0,0,0,0.3); 
+ }
+ 
+ 
+   /* ******************************** Scroll Button ****************************************** */
+ #scrollToTopBtn {
+     display: none;
+     position: fixed;
+     bottom: 20px;
+     right: 20px;
+     width: 40px;
+     height: 40px;
+     color: rgb(37, 149, 59);
+     font-size: 30px;
+     border: none;
+     cursor: pointer;
+     border-radius: 5px;
+     text-align: center;
+     line-height: 40px;
+     z-index: 10000000;
+ }
+.lwALK img{
+    width: 80%;
+    display: flex;
+    margin: 0 auto;
+    padding: 0;
+    height: auto;
+  }
+    /* ******************************** Iframe ****************************************** */
+    .fiGma{
+        margin: .5% 0;
+        background: rgb(54, 157, 74);
+        width: 80%;
+        margin: 0 auto;
+        position: relative;
+        height: 1200px;
+    }
+    .fiGma iframe{
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        cursor: pointer;
+        width: 60%;
+        height: 900px;
+        z-index: 100000;
+        border: none;
+
+    }
+    .fiGma img{
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+    .fiGma h2{
+        font-family: 'Roboto', sans-serif;
+        font-weight: bold;
+        font-size: 2.7em;
+        letter-spacing: .1em;
+        text-align: center;
+        color: white;
+        padding: 5% 0;
+    }
+        /* ******************************** Reflection ****************************************** */
+    .reFlection{
+        width: 100%;
+        height: 600px;
+
+    }
+    .reFlection h2{
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: 2.7em;
+        letter-spacing: .1em;
+        text-align: center;
+        margin: 5% 0;
+        color: rgb(51, 51, 51);
+    }
+    .reFlection p:nth-of-type(1){
+        margin-top: 0;
+        padding-top: 0;
+    }
+    .reFlection p{
+        font-family: 'Roboto', sans-serif;
+        width: 65%;
+        margin: auto;
+        padding: 1% 0;
+        font-size: 20px;
+        line-height: 1.4;
+        font-weight: 300;
+    }
+
+    @media screen and (max-width: 1024px) {
+   
+        
+        .Micon nav ul>li {
+            width: 100%; /* Adjust width */
+        }
+    
+        .fiGma{
+            height: 1000px;
+        }
+    
+        .fiGma iframe {
+            width: 40%; /* Adjust iframe width */
+            height: 700px; /* Adjust iframe height */
+        }
+        .reFlection{
+            height: 600px;
+        }
+        .reFlection p{
+            font-size: 16px;
+        }
+        .reFlection h2, .fiGma h2{
+            font-size: 1.5em;
+        }
+    }
+    @media screen and (max-width: 768px) {
+        .lwALK img{
+            width: 100%;
+            display: flex;
+            margin: 0 auto;
+            padding: 0;
+            height: auto;
+          }
+          .fiGma{
+            margin: .5% 0;
+            background: rgb(54, 157, 74);
+            width: 100%;
+            margin: 0 auto;
+            position: relative;
+            height: 1000px;
+        }
+       
+        .fiGma iframe{
+            position: absolute;
+            top: 45%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            cursor: pointer;
+            width: 60%;
+            height: 900px;
+            z-index: 100000;
+            border: none;
+    
+        }
+        .mainM span {
+            width: 1.5rem; /* Smaller menu button */
+        }
+        
+        .fiGma iframe {
+            width: 40%; /* Adjust iframe width for smaller screens */
+            height: 600px; /* Adjust iframe height */
+        }
+        .reFlection{
+            height: 350px;
+        }
+    
+        .fiGma h2 {
+            font-size: 1.4rem; /* Smaller heading size */
+        }
+    
+        .reFlection h2 {
+            font-size: 1.4rem; /* Smaller heading size */
+        }
+    
+        .reFlection p {
+            font-size: .7rem; /* Smaller paragraph text */
+        }
+    }
+    
+    

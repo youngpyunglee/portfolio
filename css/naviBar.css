@@ -1,0 +1,140 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500&family=Roboto:wght@100;300;400;500&display=swap');
+header{
+    position: absolute;
+    top: 15%;
+}
+header h1{
+    width: 100%;
+    font-size: 100px;
+    letter-spacing: .2em;
+    display: block;
+}
+header span{
+    font-family: 'Noto Sans KR', sans-serif;
+    position: absolute;
+    top: 20%;
+    font-size: 1.5em;
+    font-weight: 300;
+    letter-spacing: .1em;
+    color: rgb(79,79,79);
+}
+*{
+    box-sizing: border-box;
+}
+body{  
+    background: #fff;
+    font-family: 'Lato', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    display: flex;
+    flex-direction: column;
+}
+nav{
+    position: relative;
+    padding-bottom: 12px;
+}
+
+.line{
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    margin: 10px 0 0 0;
+    background: #ff9f2d;
+}
+
+ul{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+}
+li{
+    margin: 0 40px 0 0;
+    opacity: .4;
+    transition: all 0.4s ease;
+    &:hover{
+        opacity: .7;
+    }&.active{
+       opacity: 1; 
+    }&:last-child{
+        margin-right: 0;
+    }a{
+        text-decoration: none;
+        color: #000000;
+        text-transform: uppercase;
+        display: block;
+        font-weight: 600;
+        letter-spacing: .2em;
+        font-size: 14px;
+    }
+}
+       
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+/* Style for the submenus */
+ul.submenu {
+    display: none;
+    position: absolute;
+    background-color: #fff; /* Background color for the submenu */
+  /*   display: flex;`
+    flex-direction: column; */
+    width: 100%;
+    z-index: 1; /* Ensure submenu appears above other content */
+}
+
+ul.submenu li {
+    padding: 3% 0 3% 2%;
+    width: 40%;
+    margin: 0;
+    text-align: center;
+}
+/* Style for submenu links */
+ul.submenu a {
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #000; /* Text color for submenu links */
+    font-size: .7em;
+    text-decoration: none;
+}
+
+/* Hover effect for submenu links */
+ul.submenu li:hover{
+    background-color: #ff9f2d; /* Background color on hover */
+    transition: .5s;
+    font-weight: bold;
+     border-bottom: 2px solid #ff9f2d; 
+}
+ul.submenu li:hover a{
+    font-weight: 500;
+   
+}
+ul.submenu li:last-child:hover {
+    border-bottom: 2px solid #ff9f2d;
+} 
+
+@media screen and (max-width: 1024px) {
+    header {
+        top: 10%; /* Adjust header position */
+    }
+
+    header h1 {
+        font-size: 70px; /* Smaller font size for header */
+    }
+
+    header span {
+        top: 15%;
+        font-size: 1.2em; /* Adjust font size */
+    }
+
+    li {
+        margin: 0 20px 0 0; /* Reduce space between menu items */
+    }
+
+    ul.submenu li {
+        padding: 3% 0; /* Adjust padding for submenu items */
+    }
+    
+}
